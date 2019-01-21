@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Info</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1>
+    {{casa.nombre}}
+  </h1>
+  <img [src]="casa.img">
+  <h3>
+    {{casa.precio}}
+  </h3>
+  <p>
+    {{casa.cuartos}}
+  </p>
+  <p>
+    Ubicacion: {{casa.ubicacion}}
+  </p>
+
+  <button ion-button (click)="clickAddF()">
+    Añadir a Favoritos
+  </button>
+
+</ion-content>

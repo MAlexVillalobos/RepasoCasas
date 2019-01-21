@@ -1,15 +1,13 @@
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
-      Depas Chidorris
-    </ion-title>
+    <ion-title>Mis Favoritos</ion-title>
   </ion-navbar>
+
 </ion-header>
 
+
 <ion-content padding>
-  <button ion-button block (click)="clickFav()" >
-    Ver mis Favoritos
-  </button>
   <ion-card *ngFor="let depa of depas">
     <ion-item (click)="clickDepa(depa)">
       <img [src]="depa.img">
